@@ -8,12 +8,13 @@ var person = {
     surname: "Bui",
     toString: function ()
    {
-    return name + " " + surname;
+    return this.name + " " + this.surname;
    }
 };
 
 //person.name = "Tri";
-console.log(person.toString);
+
+console.log(person.toString());
 
 //div.innerHTML = person;
 
