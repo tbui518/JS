@@ -8,9 +8,9 @@ function person (name, surname, age)
     this.isAdult = function()
 {
         if(this.age < 18)
-            return false;
-
             return true;
+
+            return false;
 };
     this.toString = function ()
    {
@@ -18,14 +18,42 @@ function person (name, surname, age)
    };
 
 };
+
+
+function age (age)
+{
+this.age = age;
+this.isAdult = function()
+{
+        if(this.age < 18)
+            return false;
+        else{return true;}
+            
+};
+};
     
-var x = new person("Jay", "Bui", "28" )
-var y = new person("Dan", "Bui", "29" )
-var z = new person("Mike","Bui", "30" )
 
-x.somethingNew = 5;
 
-console.log(x.toString())
-console.log(y.toString())
-console.log(z.toString())
+/*var x = new person("leeroy", "jenkins", "28" )
+var y = new person("john", "smith", "29" )
+var z = new person("bill","will", "17" )
+*/
+var a = person.age = 15;
+ 
 
+//x.somethingNew = 5;
+
+//console.log(x.toString())
+//console.log(y.toString())
+//console.log(z.toString())
+//console.log(z.isAdult())
+
+console.log(a)
+console.log(age(a))
+
+
+//var x = person.prototype.somethingNew = 1;
+//var y = person.prototype.somethingNew = 1;
+
+//console.log(x,y)
+//console.log(z.somethingNew.toString())
